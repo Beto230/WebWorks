@@ -1,0 +1,44 @@
+What is HTTP?
+-Application protocol used for exchanging files on the web 
+What is a URL?
+-Is the address of a web page
+What is DNS?
+-It turns domain names into IP addresses
+What is a query string?
+-Set of characters tacked onto the end of a URL
+What are two HTTP verbs and how are they different?
+-Retrieve items (GET)
+-Creates item (POST)
+What is an HTTP request?
+-Request made to retrieve a web page or source
+What is an HTTP response?
+-Is purpose is to provide the request with the information requested
+What is an HTTP header? Give a couple 
+examples of request and response headers you have seen.
+-Lets the client and server pass additional information
+What are the processes that happen when you 
+type “http://somesite.com/some/page.html” into a browser?
+-You type a URL in your browser and press Enter.
+-Browser looks up IP address for the domain.
+-Browser initiates TCP connection with the server.
+-Browser sends the HTTP request to the server.
+-Server processes request and sends back a response.
+-Browser renders the content.
+
+
+Part Two:
+% curl -H "Accept: application/json" "https://icanhazdadjoke.com/search?term=pirate"
+{"current_page":1,
+"limit":20,
+"next_page":1,
+"previous_page":1,
+"results":
+[{"id":"QuscibaMClb","joke":"What does a pirate pay for his corn? A buccaneer!"},
+{"id":"2gii3LeN7Ed","joke":"Why couldn't the kid see the pirate movie? Because it was rated arrr!"},
+{"id":"SvzIBAQS0Dd","joke":"What did the pirate say on his 80th birthday? Aye Matey!"},
+{"id":"exXSCtkOKe","joke":"Why do pirates not know the alphabet? They always get stuck at \"C\"."},
+{"id":"SnOf2gqjiqc","joke":"Why are pirates called pirates? Because they arrr!"}],
+"search_term":"pirate","status":200,"total_jokes":5,"total_pages":1}
+
+Part Three:
+
