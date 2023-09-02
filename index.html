@@ -1,35 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Giphy Party!</title>
 </head>
 <body>
-    <form action="/action_page.php" method="get">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="fname">
-        <br>
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lname">
-        <br>
-        <label for="age">Age</label>
-        <input type="text" id="age" name="age">
-        <input value="submit" type="submit">
-        <br>
+  <div class="container">
+    <h1 class="textH1">Giphy Party</h1>
+    <form class="form">
+      <input type="text" id="search" name="search" placeholder="Enter a Search" class="form-control mr-2">
+      <input type="submit" class="btn btn-secondary" value="Search Giphy!">
+      <button id="remove" class="btn btn-danger ml-2">Remove Images
+      </button>
     </form>
-    <form action="/action_page.php" method="post">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="fname">
-        <br>
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lname">
-        <br>
-        <label for="age">Age</label>
-        <input type="text" id="age" name="age">
-        <input value="submit" type="submit">
-        <br>
-    </form>
+    <div id="gif-area" class="row">
+    </div>
+  </div>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.js"></script>
+<script src="app.js"></script>
 </body>
+
 </html>
